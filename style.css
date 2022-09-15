@@ -38,13 +38,10 @@ body {
 }
 
 .container {
-  /* border: 2px solid red; */
-
   max-width: 100px;
   min-width: 500px;
   position: relative;
   top: -15rem;
-
   background-color: #151741;
   opacity: 0.9;
   padding: 0.1rem 1.1rem 0;
@@ -70,7 +67,6 @@ body {
 }
 
 h1 {
-  /* border: 2px solid red; */
   position: relative;
   top: -16.4rem;
   color: black;
