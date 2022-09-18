@@ -20,19 +20,18 @@ addBtn.addEventListener("click", () => {
     newDiv.addEventListener("click", () => {
       if (newDiv.style.backgroundColor == "red") {
         newDiv.style.backgroundColor = "#0096ff";
-        // trash.style.display = "none";
       } else {
         newDiv.style.backgroundColor = "red";
-        for (let i = 0; i < trash.length; i++) {
-          trash[i].onclick = function () {
-            this.parentNode.remove();
-          };
-        }
+        trash.forEach((t) => {
+          t.addEventListener("click", () => {
+            newDiv.style.backgroundColor == "red" && t.parentElement.remove();
+          });
+        });
       }
     });
     const trash = document.querySelectorAll(".fa-trash");
-    console.log(trash);
 
+    //? delBtn event handler
     delBtn.addEventListener("click", () => {
       listArea.childElementCount > 0 && newDiv.remove();
       inputBox.value = "";
@@ -47,7 +46,7 @@ window.addEventListener("load", () => {
   inputBox.focus();
 });
 
-//? enter key and del key event handler
+//? enter key event handler
 inputBox.addEventListener("keydown", (e) => {
   if (e.code == "Enter") {
     addBtn.click();
