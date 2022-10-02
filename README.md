@@ -1,4 +1,4 @@
-# todo
+# Todo
 
 ## Table of contents
 
