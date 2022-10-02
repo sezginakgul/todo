@@ -20,7 +20,7 @@
 Your company has recently started on a project that aims to create a simple To-Do App. So you and your colleagues have started to work on the project.
 
 ### User Stories
-   - When I click the "+" button on the app to be performed, the new job will be added to the list.
+   - Clicking the "+" button in the app adds the new job to the list.
    - When the plus button is clicked, a warning message is given to the user if the input field is empty
    - Clicking on items in the to do list will make the task red
    - Clicking the trash can button in the application to be performed turns the task red first. You can then remove the task from the list with the second click. If the task is not red, the deletion does not occur.
